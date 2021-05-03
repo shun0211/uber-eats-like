@@ -60,6 +60,8 @@ GEM
       minitest (>= 5.1)
       tzinfo (~> 2.0)
       zeitwerk (~> 2.3)
+    ancestry (4.0.0)
+      activerecord (>= 5.2.4.5)
     bootsnap (1.7.4)
       msgpack (~> 1.0)
     builder (3.2.4)
@@ -156,6 +158,7 @@ PLATFORMS
   x86_64-darwin-18
 
 DEPENDENCIES
+  ancestry
   bootsnap (>= 1.4.4)
   byebug
   listen (~> 3.3)
