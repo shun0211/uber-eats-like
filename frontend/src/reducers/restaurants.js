@@ -18,6 +18,9 @@ export const restaurantsReducer = (state, action) => {
         fetchState: REQUEST_STATE.LOADING,
       };
     case restaurantsActionTypes.FETCH_SUCCESS:
+      console.log(action.type)
+      console.log(action.payload)
+
       return {
         fetchState: REQUEST_STATE.OK,
         restaurantsList: action.payload.restaurants,
