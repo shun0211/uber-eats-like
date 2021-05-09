@@ -13,6 +13,7 @@ export const restaurantsActionTypes = {
 export const restaurantsReducer = (state, action) => {
   switch (action.type) {
     case restaurantsActionTypes.FETCHING:
+      console.log(state);
       return {
         ...state,
         fetchState: REQUEST_STATE.LOADING,
